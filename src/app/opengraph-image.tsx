@@ -12,33 +12,10 @@ export const size = {
 
 export const contentType = "image/png";
 
-async function loadFont(family: string, weight: number): Promise<ArrayBuffer> {
-  const cssUrl = `https://fonts.googleapis.com/css2?family=${encodeURIComponent(
-    family,
-  )}:wght@${weight}&display=swap`;
-  const css = await (
-    await fetch(cssUrl, {
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
-      },
-    })
-  ).text();
-  const match = css.match(
-    /src:\s*url\((https:\/\/[^)]+\.woff2)\)\s*format\('woff2'\)/,
-  );
-  if (!match) {
-    throw new Error(`Could not extract woff2 URL for ${family} ${weight}`);
-  }
-  return await (await fetch(match[1])).arrayBuffer();
-}
-
-export default async function Image() {
-  const [dmSansBold, dmSansRegular] = await Promise.all([
-    loadFont("DM Sans", 700),
-    loadFont("DM Sans", 400),
-  ]);
-
+// Defaults to ImageResponse's built-in sans-serif. Edge-safe (no external
+// font fetch). The card stays on-brand via color and composition; exact
+// typographic match to on-page DM Sans is a v0.4 polish item.
+export default function Image() {
   return new ImageResponse(
     (
       <div
@@ -51,9 +28,20 @@ export default async function Image() {
           justifyContent: "center",
           alignItems: "flex-start",
           padding: "96px",
-          fontFamily: '"DM Sans", system-ui, sans-serif',
+          fontFamily: "system-ui, sans-serif",
         }}
       >
+        <div
+          style={{
+            position: "absolute",
+            top: "48px",
+            right: "96px",
+            width: "80px",
+            height: "1px",
+            background: "#df3d82",
+            display: "flex",
+          }}
+        />
         <div
           style={{
             width: "96px",
@@ -123,34 +111,10 @@ export default async function Image() {
         >
           The Villages · Lake County · Sumter County
         </div>
-        <div
-          style={{
-            position: "absolute",
-            top: "48px",
-            right: "96px",
-            width: "80px",
-            height: "1px",
-            background: "#df3d82",
-          }}
-        />
       </div>
     ),
     {
       ...size,
-      fonts: [
-        {
-          name: "DM Sans",
-          data: dmSansBold,
-          style: "normal",
-          weight: 700,
-        },
-        {
-          name: "DM Sans",
-          data: dmSansRegular,
-          style: "normal",
-          weight: 400,
-        },
-      ],
     },
   );
 }
