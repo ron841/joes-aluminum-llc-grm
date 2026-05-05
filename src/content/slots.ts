@@ -26,10 +26,21 @@ export const nav = {
     { label: "What He Does", href: "#services" },
     { label: "What People Say", href: "#proof" },
     { label: "About Joe", href: "#about" },
-    { label: "All 115 Reviews", href: "/reviews" },
+    { label: "Reviews", href: "/reviews" },
     { label: "Contact", href: "#contact" },
   ],
   cta_phone: "Call (352) 602-3785",
+};
+
+export const reviewsPage = {
+  eyebrow: "Reviews",
+  headline: "Thirty of one-hundred-fifteen.",
+  intro:
+    "Joe's customers have left 115 reviews on Google, averaging 5.0 stars. We captured 30 here, picked to cover the full picture: lanai work, pool cages, screen doors, vinyl windows, gutters, and the metal-roof leaks. Joe answered nearly every one of them himself.",
+  leads_label: "The three that say it best.",
+  rest_label: "The rest, newest first.",
+  see_all_label: "Read all 115 on Google",
+  curated_lead_names: ["Michael Baruch", "Cole Ramsey", "Lou Berger"],
 };
 
 export const hero = {

@@ -40,7 +40,9 @@
 }
 
 html {
-  scroll-padding-top: 72px;
+  /* 72px sticky-nav height + 24px breathing buffer so the eyebrow
+     does not read as stacked against the brand wordmark on mobile. */
+  scroll-padding-top: 96px;
   scroll-behavior: smooth;
 }
 

@@ -1,10 +1,23 @@
 "use client";
 
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { nav, site } from "@/content/slots";
 
+// Resolves an in-page anchor against the current route. On the home page,
+// `#contact` stays as-is. Off the home page (e.g. /reviews), `#contact`
+// becomes `/#contact` so the browser navigates home and lands on the
+// section instead of dead-ending the URL hash on the current route.
+function resolveHref(href: string, pathname: string): string {
+  if (!href.startsWith("#")) return href;
+  if (pathname === "/") return href;
+  return `/${href}`;
+}
+
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname() || "/";
 
   useEffect(() => {
     if (open) {
@@ -24,7 +37,11 @@ export default function Nav() {
       style={{ height: "72px" }}
     >
       <div className="container-x flex items-center justify-between w-full">
-        <a href="#main" className="flex items-center gap-3 no-underline">
+        <Link
+          href="/"
+          aria-label="Joe's Aluminum, home"
+          className="flex items-center gap-3 no-underline"
+        >
           <span
             aria-hidden="true"
             className="grid place-items-center w-8 h-8 rounded-[6px] text-white font-semibold text-sm"
@@ -41,13 +58,13 @@ export default function Nav() {
           >
             {nav.brand_wordmark}
           </span>
-        </a>
+        </Link>
 
         <div className="hidden md:flex items-center gap-8">
           {nav.links.map((link) => (
             <a
               key={link.href}
-              href={link.href}
+              href={resolveHref(link.href, pathname)}
               className="text-[var(--color-fg)] uppercase tracking-[0.06em] text-[13px] hover:text-[var(--color-accent)] hover:no-underline"
               style={{ fontFamily: "var(--font-mono)" }}
             >
@@ -110,7 +127,7 @@ export default function Nav() {
           {nav.links.map((link) => (
             <a
               key={link.href}
-              href={link.href}
+              href={resolveHref(link.href, pathname)}
               onClick={() => setOpen(false)}
               className="text-[var(--color-fg)] uppercase tracking-[0.06em] text-[15px] py-4 border-b border-[var(--color-rule)] no-underline"
               style={{ fontFamily: "var(--font-mono)" }}
