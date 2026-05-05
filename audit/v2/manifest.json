@@ -50,8 +50,8 @@
   "artifacts": [
     {
       "path": "README.md",
-      "sha256": "a9a82e4c69e106ea3881412c0ac2ecd36f85b49ab4041ef987f83cb29e25079f",
-      "bytes": 4156
+      "sha256": "7ca1830e7854be6bec6a9e426e0474ffd6e7a78c9bcbfc9024caf68181da2f1d",
+      "bytes": 4141
     },
     {
       "path": "findings.md",
@@ -102,6 +102,32 @@
       "path": "screenshots/reviews-mobile.png",
       "sha256": "20210f9a86596ef20b644fcdbf68c704bf6b0c3233d6f950ec065fae3eb7f13a",
       "bytes": 143954
+    },
+    {
+      "path": "triage.md",
+      "sha256": "9f087ac0d6f602adcaf92a7ea71d244e1b15e31620eb4ec7ec930434156f064b",
+      "bytes": 5098
     }
-  ]
+  ],
+  "triage": {
+    "completed": true,
+    "completed_utc": "2026-05-05T22:30:00Z",
+    "fixes_bundled_for_v3": [
+      "B1",
+      "B2",
+      "B3",
+      "P1",
+      "P2",
+      "O1",
+      "O2",
+      "C1"
+    ],
+    "deferred": [],
+    "accepted_no_action": [],
+    "lessons_doc_candidates": [
+      "Architectural flexes need an explicit nav-href audit",
+      "Render the corpus when the corpus is the architectural argument",
+      "v1 fixes held cleanly through v2 (positive bundling pattern)"
+    ]
+  }
 }

@@ -29,7 +29,7 @@ This pass is audit-only. No fixes applied. Findings categorized so Design ratifi
 ## Reading order
 
 1. [findings.md](findings.md) — full categorized findings with screenshots and build locations.
-2. `triage.md` — Design's decisions on each finding plus the bundled v3 build sequence (added after Design pass).
+2. [triage.md](triage.md) — Design's decisions on each finding plus the bundled v3 build sequence.
 3. [screenshots/](screenshots/) — Playwright captures referenced from findings.
 4. [manifest.json](manifest.json) — machine-readable index of every artifact in this pass.
 
