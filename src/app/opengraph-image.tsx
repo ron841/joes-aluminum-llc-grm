@@ -84,15 +84,18 @@ export default function Image() {
           }}
         >
           <span style={{ color: "#1a1a1a", fontWeight: 700 }}>5.0</span>
-          <span
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="#df3d82"
             style={{
-              color: "#df3d82",
               marginLeft: "12px",
               marginRight: "20px",
             }}
           >
-            ★
-          </span>
+            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26z" />
+          </svg>
           <span>115 reviews</span>
           <span style={{ margin: "0 16px", color: "#5a5550" }}>·</span>
           <span>Fruitland Park, FL</span>
