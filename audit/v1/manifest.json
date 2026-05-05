@@ -45,8 +45,8 @@
   "artifacts": [
     {
       "path": "README.md",
-      "sha256": "21a1e0ed0e01be9c290f62da32d51017be359d8c9936b09492e7261654662567",
-      "bytes": 2846
+      "sha256": "da2ecf9190214d9d6aee6a7c3d03a2c5d7d3651ee1fe1204452a23f9c8ae1338",
+      "bytes": 3844
     },
     {
       "path": "findings.md",
@@ -157,6 +157,39 @@
       "path": "screenshots/reviews-mobile.png",
       "sha256": "bd36ec19201d4b59186ed9b749cfaaf89bd4f9100d0b88f402d3749cb8f751b6",
       "bytes": 139132
+    },
+    {
+      "path": "triage.md",
+      "sha256": "d8144c1c72cb138da67ec822746c72bf6009f4c99f5ccdf80c010d8dacd5de8f",
+      "bytes": 5817
     }
-  ]
+  ],
+  "triage": {
+    "completed": true,
+    "completed_utc": "2026-05-05T20:50:00Z",
+    "fixes_bundled_for_v2": [
+      "B1",
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "D1",
+      "D3"
+    ],
+    "deferred_to_walkthrough": [
+      "B2",
+      "P5",
+      "O1",
+      "O2",
+      "O3"
+    ],
+    "accepted_no_action": [
+      "O4",
+      "D2"
+    ],
+    "lessons_doc_candidates": [
+      "Unlayered global a{} rules outrank Tailwind utilities (CSS Cascade L5 footgun)",
+      "Operator-reported bugs need visual-layer audit in parallel with functional"
+    ]
+  }
 }
