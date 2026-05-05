@@ -1,0 +1,107 @@
+{
+  "audit_version": "v2",
+  "site_url": "https://joes-aluminum-llc-grm.vercel.app",
+  "site_repo": "ron841/joes-aluminum-llc-grm",
+  "audit_run_utc": "2026-05-05T22:10:00Z",
+  "trigger": "operator walkthrough",
+  "preceded_by": "audit/v1/ + v2 build pass (commits 7a24ec6, 2794243, 428d471, ae0efa6, 369e7ce, ff578d7)",
+  "viewports_tested": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "mobile",
+      "width": 375,
+      "height": 812
+    }
+  ],
+  "summary": {
+    "blockers": 3,
+    "polish": 2,
+    "operator_decision": 2,
+    "content": 1,
+    "total_findings": 8
+  },
+  "operator_supplied_assets": [
+    {
+      "id": "O2-hero-photo",
+      "description": "Landscape pool-cage photo (palm, sky, framework detail)",
+      "status": "in chat, not yet on disk",
+      "suggested_path": "~/grm-sites-prospects/joes-aluminum-l-l-c/audit/photos/operator-supplied/hero-pool-cage.jpg"
+    }
+  ],
+  "operator_dictated_decisions": [
+    {
+      "id": "O1",
+      "decision": "Nav label 'All 115 Reviews' -> 'Reviews'",
+      "binding": true
+    }
+  ],
+  "verified_clean_carryforward": [
+    "v1 B1 pink-on-pink CTA fixed and stays fixed",
+    "v1 B2 same-page anchors still working",
+    "OG card renders 1200x630 with brand mark + 5 stars + 115 reviews",
+    "JSON-LD HomeAndConstructionBusiness validates",
+    "sitemap.xml + robots.txt correct",
+    "zero em-dashes in rendered HTML"
+  ],
+  "artifacts": [
+    {
+      "path": "README.md",
+      "sha256": "a9a82e4c69e106ea3881412c0ac2ecd36f85b49ab4041ef987f83cb29e25079f",
+      "bytes": 4156
+    },
+    {
+      "path": "findings.md",
+      "sha256": "b587108553e20dff2bc45dd5d6f1bdbdcb5834bda47cfe52253336652c83da13",
+      "bytes": 12058
+    },
+    {
+      "path": "raw-findings.json",
+      "sha256": "b576b4deb849e64b0da4a0bd0e15b94bc6a43152ce4ba2d836e58551f617ed85",
+      "bytes": 3003
+    },
+    {
+      "path": "screenshots/desktop-after-click-services.png",
+      "sha256": "d414fe633d0ab8daca4ad5ca3ecfa43d8a00cbaadee84e55aeb1562ff80381d8",
+      "bytes": 44935
+    },
+    {
+      "path": "screenshots/mobile-after-tap-proof.png",
+      "sha256": "a0fedc48e36cf76288b2a663a4bfcea8aed5a0668d17d9f5be8e30ef6f373e14",
+      "bytes": 143805
+    },
+    {
+      "path": "screenshots/mobile-after-tap-services.png",
+      "sha256": "cc04a61767e1e8bb9e2f5b3997ed2f0318e9493d9d044372fd9e97f2b94df47e",
+      "bytes": 411001
+    },
+    {
+      "path": "screenshots/mobile-drawer-open.png",
+      "sha256": "f96db07fdaa027811698b643d70b830de2d88d06d1c5243fa5b4be0ccbd9e26c",
+      "bytes": 45352
+    },
+    {
+      "path": "screenshots/reviews-after-click-contact.png",
+      "sha256": "2f53247de365d0fdf194972646c0568b32dcd6bd9ccfaf0128e0fbcd470b6640",
+      "bytes": 77584
+    },
+    {
+      "path": "screenshots/reviews-desktop.png",
+      "sha256": "82c67e98c4b95e7e550bde152ba06fba08eae9acc5736ab7197ad473663d65b7",
+      "bytes": 77296
+    },
+    {
+      "path": "screenshots/reviews-mobile-after-tap-contact.png",
+      "sha256": "fa53244100e5992aced433971c4d7872cf45ea670f65c58c896c5cd95a420cd7",
+      "bytes": 94971
+    },
+    {
+      "path": "screenshots/reviews-mobile.png",
+      "sha256": "20210f9a86596ef20b644fcdbf68c704bf6b0c3233d6f950ec065fae3eb7f13a",
+      "bytes": 143954
+    }
+  ]
+}

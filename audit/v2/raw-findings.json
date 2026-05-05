@@ -1,0 +1,86 @@
+{
+  "base_url": "https://joes-aluminum-llc-grm.vercel.app",
+  "timestamp": "2026-05-05T21:32:10Z",
+  "mobile": {
+    "after_tap_services_spacing": {
+      "nav_height": 72,
+      "nav_bottom": 72,
+      "services_top": 71.828125,
+      "eyebrow_top": 144.828125,
+      "eyebrow_text": "WHAT HE DOES",
+      "h2_top": 181.96875,
+      "h2_text": "Screens first. Aluminum work next.",
+      "buffer_nav_to_section_top": -0.171875,
+      "buffer_nav_to_eyebrow": 72.828125,
+      "buffer_nav_to_h2": 109.96875,
+      "window_scrollY": 1388,
+      "scroll_padding_top": "72px",
+      "section_padding_top": "68px"
+    },
+    "after_tap_proof_spacing": {
+      "buffer_nav_to_section_top": 0.28125,
+      "buffer_nav_to_eyebrow": 74.28125,
+      "eyebrow_text": "WHAT PEOPLE SAY"
+    }
+  },
+  "desktop": {
+    "after_click_services_spacing": {
+      "nav_height": 72,
+      "buffer_nav_to_section_top": -0.046875,
+      "buffer_nav_to_eyebrow": 106.953125,
+      "buffer_nav_to_h2": 144.09375
+    }
+  },
+  "reviews_page": {
+    "desktop_inventory": {
+      "blockquotes": 0,
+      "articles": 0,
+      "main_text": "ALL 115 REVIEWS\n\nThe full set is on its way.\n\nJoe's customers have left 115 reviews on Google, averaging 5.0 stars. We're putting the full corpus on this page after Joe's walkthrough. In the meantime, read them where they live.\n\nREAD ON GOOGLE\n←\nBACK HOME"
+    }
+  },
+  "cross_page_anchor": {
+    "Contact": {
+      "href": "#contact",
+      "url_before": "https://joes-aluminum-llc-grm.vercel.app/reviews",
+      "url_after": "https://joes-aluminum-llc-grm.vercel.app/reviews#contact",
+      "scrolled_to": 0,
+      "navigated_off_reviews": false
+    },
+    "What He Does": {
+      "href": "#services",
+      "url_before": "https://joes-aluminum-llc-grm.vercel.app/reviews",
+      "url_after": "https://joes-aluminum-llc-grm.vercel.app/reviews#services",
+      "scrolled_to": 0,
+      "navigated_off_reviews": false
+    },
+    "What People Say": {
+      "href": "#proof",
+      "url_before": "https://joes-aluminum-llc-grm.vercel.app/reviews",
+      "url_after": "https://joes-aluminum-llc-grm.vercel.app/reviews#proof",
+      "scrolled_to": 0,
+      "navigated_off_reviews": false
+    },
+    "About Joe": {
+      "href": "#about",
+      "url_before": "https://joes-aluminum-llc-grm.vercel.app/reviews",
+      "url_after": "https://joes-aluminum-llc-grm.vercel.app/reviews#about",
+      "scrolled_to": 0,
+      "navigated_off_reviews": false
+    },
+    "Contact (mobile drawer)": {
+      "url_before": "https://joes-aluminum-llc-grm.vercel.app/reviews",
+      "url_after": "https://joes-aluminum-llc-grm.vercel.app/reviews#contact",
+      "navigated_off_reviews": false
+    }
+  },
+  "screenshots": [
+    "mobile-drawer-open.png",
+    "mobile-after-tap-services.png",
+    "mobile-after-tap-proof.png",
+    "desktop-after-click-services.png",
+    "reviews-desktop.png",
+    "reviews-mobile.png",
+    "reviews-after-click-contact.png",
+    "reviews-mobile-after-tap-contact.png"
+  ]
+}
