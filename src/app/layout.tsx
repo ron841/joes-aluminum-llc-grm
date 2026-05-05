@@ -39,21 +39,14 @@ export const metadata: Metadata = {
     title: "Joe's Aluminum. Screens & Aluminum Work",
     description:
       "One-hundred-fifteen reviews. Five stars on Google. The aluminum guy The Villages already calls.",
-    images: [
-      {
-        url: "/photos/03-gbp-owner-joes-aluminum-l-l-c.jpg",
-        width: 3024,
-        height: 4032,
-        alt: "Joe's Aluminum finished work",
-      },
-    ],
+    // images populated by src/app/opengraph-image.tsx (file-based metadata)
   },
   twitter: {
     card: "summary_large_image",
     title: "Joe's Aluminum. Screens & Aluminum Work",
     description:
       "One-hundred-fifteen reviews. Five stars on Google. The aluminum guy The Villages already calls.",
-    images: ["/photos/03-gbp-owner-joes-aluminum-l-l-c.jpg"],
+    // images populated by src/app/twitter-image.tsx (file-based metadata)
   },
   robots: {
     index: true,

@@ -11,17 +11,15 @@ export default function Trust() {
       }}
     >
       <div className="container-x">
-        <ul className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-[repeat(4,1fr)_1.5fr]">
+        <ul className="grid gap-6 md:gap-8 md:grid-cols-[repeat(2,1fr)_1.5fr] lg:grid-cols-[repeat(4,1fr)_1.5fr]">
           {trust.map((item, idx) => (
             <li
               key={idx}
-              className="flex flex-col gap-2"
-              style={
-                idx > 0
-                  ? {
-                      borderLeft: "0",
-                    }
-                  : {}
+              className={
+                "flex flex-col gap-2" +
+                (idx > 0
+                  ? " lg:pl-8 lg:border-l lg:border-[var(--color-rule)]"
+                  : "")
               }
             >
               <span

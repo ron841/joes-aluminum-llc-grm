@@ -39,6 +39,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 72px;
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   background: var(--color-bg);
@@ -82,13 +87,15 @@ h3 {
   }
 }
 
-a {
-  color: var(--color-accent);
-  text-decoration: none;
-}
+@layer base {
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+  }
 
-a:hover {
-  text-decoration: underline;
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 :focus-visible {
